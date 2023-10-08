@@ -4,7 +4,7 @@ export default defineConfig({
   title: 'TuiPlus基础组件文档',
   description: '基于Element-plus基础组件封装使用',
   lang: 'cn-ZH',
-  base: '/t-ui-plus/',
+  base: '/alladin-ui-plus/',
   lastUpdated: true,
   themeConfig: {
     logo: '/favicon.ico',
