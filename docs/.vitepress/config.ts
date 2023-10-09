@@ -1,14 +1,14 @@
 import { defineConfig } from 'vitepress'
 import { mdPlugin } from './config/plugins'
 export default defineConfig({
-  title: 'TuiPlus基础组件文档',
+  title: '前端文档',
   description: '基于Element-plus基础组件封装使用',
   lang: 'cn-ZH',
   base: '/alladin-ui-plus/',
   lastUpdated: true,
   themeConfig: {
-    logo: '/favicon.ico',
-    siteTitle: 'TuiPlus基础组件文档',
+    logo: '/img/logo.png',
+    siteTitle: '前端文档',
     outline: 3,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/wocwin/t-ui-plus' },
