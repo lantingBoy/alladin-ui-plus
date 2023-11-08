@@ -77,9 +77,9 @@ export default defineConfig({
     lib: {
       // entry: resolve(__dirname, 'packages/index.ts'),
       entry: './packages/index.ts',
-      name: 't-ui-plus',
+      name: 'lamp-pro',
       // formats: ['es', 'cjs'],
-      fileName: 't-ui-plus',
+      fileName: 'lamp-pro',
     },
   }
 })

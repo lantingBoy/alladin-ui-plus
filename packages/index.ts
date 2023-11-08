@@ -16,7 +16,8 @@ import TTimerBtn from './timer-btn'
 import TModuleForm from './module-form'
 import TAdaptivePage from './adaptive-page'
 import TDatePicker from './date-picker'
-
+import rs from './hooks/rs/index'
+import os from './hooks/os/index'
 // 存储组件列表
 const components: {
   [propName: string]: Component
@@ -74,6 +75,8 @@ export {
   TModuleForm,
   TAdaptivePage,
   TDatePicker,
+  rs,
+  os
 }
 export default {
   // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
