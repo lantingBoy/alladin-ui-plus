@@ -13,6 +13,10 @@ import TTimerBtn from './lib/timer-btn/src/index.vue'
 import TModuleForm from './lib/module-form/src/index.vue'
 import TAdaptivePage from './lib/adaptive-page/src/index.vue'
 import TDatePicker from './lib/date-picker/src/index.vue'
+import ProSearch from "./lib/proSearch/src/index.vue"
+import ProTable from "./lib/proTable/index.vue"
+import ProLayout from "./lib/proLayout/index.vue"
+import ProLoading from "./lib/proLoading/index.vue"
 // GlobalComponents for Volar
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
@@ -121,6 +125,10 @@ declare module '@vue/runtime-core' {
     TModuleForm: typeof TModuleForm
     TAdaptivePage: typeof TAdaptivePage
     TDatePicker: typeof TDatePicker
+    ProSearch: typeof ProSearch
+    ProTable: typeof ProTable
+    ProLoading: typeof ProLoading
+    ProLayout: typeof ProLayout
   }
 
   interface ComponentCustomProperties {
@@ -131,8 +139,7 @@ declare module '@vue/runtime-core' {
     $alert: typeof import('element-plus')['ElMessageBox']['alert']
     $confirm: typeof import('element-plus')['ElMessageBox']['confirm']
     $prompt: typeof import('element-plus')['ElMessageBox']['prompt']
-    $loading: typeof import('element-plus')['ElLoadingService']
+    // $loading: typeof import('element-plus')['ElLoadingService']
   }
 }
-
 export {}

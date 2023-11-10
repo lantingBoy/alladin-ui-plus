@@ -57,6 +57,7 @@ export default defineConfig({
     alias: {
       // '@': resolve(__dirname, 'examples'),
       '@': resolve(__dirname, 'packages'),
+      "@packages": resolve(__dirname, "./packages"),
     },
     // 类型： string[] 导入时想要省略的扩展名列表。
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.json', '.vue', '.mjs'],
@@ -66,7 +67,7 @@ export default defineConfig({
     // cssCodeSplit: true, // 强制内联CSS
     rollupOptions: {
       // 请确保外部化那些你的库中不需要的依赖
-      external: ['vue'],
+      external: ['vue',"element-plus","vue-hooks-plus"],
       output: {
         // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
         globals: {
@@ -77,9 +78,9 @@ export default defineConfig({
     lib: {
       // entry: resolve(__dirname, 'packages/index.ts'),
       entry: './packages/index.ts',
-      name: 'lamp-pro',
+      name: 'lighting-pro',
       // formats: ['es', 'cjs'],
-      fileName: 'lamp-pro',
+      fileName: 'lighting-pro',
     },
   }
 })

@@ -1,12 +1,12 @@
 {
   "name": "lighting-pro",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Vue3 中基于Element-plus二次封装基础组件文档",
   "author": "lantingBoy",
   "license": "ISC",
   "private": false,
-  "main": "lib/lamp-pro.umd.cjs",
-  "module": "lib/lamp-pro.umd.cjs",
+  "main": "lib/lighting-pro.umd.cjs",
+  "module": "lib/lighting-pro.umd.cjs",
   "types": "lib/index.d.ts",
   "type": "module",
   "files": [
@@ -61,13 +61,14 @@
     "unplugin-auto-import": "^0.11.2",
     "vite": "^3.1.0",
     "vite-plugin-compression": "^0.5.1",
-    "vite-plugin-dts": "^1.7.3",
+    "vite-plugin-dts": "3.6.3",
     "vite-plugin-vue-setup-extend": "^0.4.0",
     "vitepress": "1.0.0-alpha.75",
     "vue": "3.2.44",
     "vue-hooks-plus": "^1.8.5",
     "vue-router": "^4.1.5",
     "vue-tsc": "^0.40.4",
+    "vue3-print-nb": "^0.1.4",
     "vuedraggable": "^4.1.0"
   },
   "repository": {
@@ -87,5 +88,8 @@
     "二次封装组件",
     "封装组件",
     "components"
-  ]
+  ],
+  "dependencies": {
+    "vue-loading-overlay": "^6.0.3"
+  }
 }

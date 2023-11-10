@@ -16,8 +16,15 @@ import TTimerBtn from './timer-btn'
 import TModuleForm from './module-form'
 import TAdaptivePage from './adaptive-page'
 import TDatePicker from './date-picker'
+
+import ProSearch from "./proSearch"
+import ProLayout from './proLayout'
+import ProTable from './proTable'
+import ProLoading from './proLoading'
 import rs from './hooks/rs/index'
 import os from './hooks/os/index'
+
+
 // 存储组件列表
 const components: {
   [propName: string]: Component
@@ -36,6 +43,11 @@ const components: {
   TModuleForm,
   TAdaptivePage,
   TDatePicker,
+  ProSearch,
+  ProLayout,
+  ProLoading,
+  ProTable
+
 }
 // 插件声明：声明所有插件
 // 插件注册：在 Vue 项目的入口文件中，通过 ( app.use(插件) ) 进行注册
@@ -75,9 +87,23 @@ export {
   TModuleForm,
   TAdaptivePage,
   TDatePicker,
+  ProSearch,
+  ProLayout,
+  ProLoading,
+  ProTable,
   rs,
-  os
+  os,
 }
+
+export type { ColumnProps, ProTableRefProps, EnumProps } from './proTable/interface';
+export type {
+	DateList,
+	LayoutType,
+	TriggerType,
+	SearchCandidateProperties,
+	Config,
+	ColFilterConfig
+} from './proSearch/src/types';
 export default {
   // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
   install,

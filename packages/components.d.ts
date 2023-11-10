@@ -13,7 +13,10 @@ import TTimerBtn from './timer-btn/src/index.vue'
 import TModuleForm from './module-form/src/index.vue'
 import TAdaptivePage from './adaptive-page/src/index.vue'
 import TDatePicker from './date-picker/src/index.vue'
-
+import ProSearch from './proSearch/src/index.vue'
+import ProTable from './proTable/index.vue'
+import proLoading from './proLoading/index.vue'
+import proLayout from './proLayout/index.vue'
 declare module 'vue' {
   export interface GlobalComponents {
     TLayoutPage: typeof TLayoutPage
@@ -29,6 +32,10 @@ declare module 'vue' {
     TTimerBtn: typeof TTimerBtn
     TModuleForm: typeof TModuleForm
     TAdaptivePage: typeof TAdaptivePage
-    TDatePicker: typeof TDatePicker
+    TDatePicker: typeof TDatePicker,
+    ProSearch: typeof ProSearch
+    ProTable: typeof ProTable
+    ProLoading: typeof proLoading
+    proLayout: typeof proLayout
   }
 }

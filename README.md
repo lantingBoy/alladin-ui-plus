@@ -1,12 +1,12 @@
 
-
-
 ### 特性
-💎 简单易用 - 基于 Element-plus 进行面向常见业务的封装
-📦 场景丰富 - 提供一些列面向常见业务场景基础组件
-💡 TypeScript - 提供完整 TypeScript 类型定义
-🎨 更少的代码 - 多种配置减少代码的书写
+-💎 简单易用 - 基于 Element-plus 进行面向常见业务的封装
+-📦 场景丰富 - 提供一些列面向常见业务场景基础组件
+-💡 TypeScript - 提供完整 TypeScript 类型定义
+-🎨 更少的代码 - 多种配置减少代码的书写
 
+### 发布到githubio
+- 提交代码后，登录到github 点Actions查看流水线是否构建成功
 ```js
 // 需要在使用的项目的tsconfig.json文件中添加以下
 compilerOptions：{
