@@ -13,7 +13,7 @@ hero:
     alt: lamp-admin
   actions:
     - theme: brand
-      text: 开始11
+      text: 开始
       link: /components/
     - theme: alt
       text: 为什么选我们 ?
