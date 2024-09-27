@@ -2,37 +2,49 @@
 
 ::: tip 提示
 
-@wocwin/t-ui-plus 基于 vue3 + ts + Element-plus 再次封装的基础组件
+lighting-pro 基于 vue3 + ts + Element-plus 再次封装的基础组件
 
 :::
 
 ### 安装
 
 ```bash:no-line-numbers
-npm install @wocwin/t-ui-plus -S
+npm install lighting-pro -S
 &
-pnpm add @wocwin/t-ui-plus -S
+pnpm install lighting-pro -S
 ```
 
 
-### 使用
 
+### 全局引入
 ```js
-// main.ts
-import TuiPlus from '@wocwin/t-ui-plus'
-import '@wocwin/t-ui-plus/lib/style.css'
+// main.ts 
+import LightingUiPro from 'lighting-pro'
+import 'lighting-pro/lib/style.css'
 const app = createApp(App)
-app.use(TuiPlus)
+app.use(LightingUiPro)
 app.mount('#app')
 ```
+### 局部引入
+```js
+// main.ts
+import 'lighting-pro/lib/style.css'
+// index.vue
+import { TButton } from 'lighting-pro'
+<template>
+  <TButton>按钮</TButton>
+</template>
 
-### T-ui-plus组件 Volar 类型提示
+```
+
+
+### lighting-pro组件库 Volar 类型提示
 
 ```js
 // 需要在使用的项目的tsconfig.json文件中添加以下
 compilerOptions：{
   "types": [
-      "@wocwin/t-ui-plus/components.d.ts",
+      "lighting-pro/components.d.ts",
     ],
 }
 
@@ -57,12 +69,4 @@ compilerOptions：{
 ├─ tsconfig.json          # typescript 全局配置
 └─ vite.config.ts         # vite 全局配置文件（支持tsx）
 ```
-### vue2基础组件
-> 基于 vue2 + Element-ui 和 ant-design-vue 二次封装的基础组件
-******
-#### [Vue2 基础组件文档地址](https://wocwin.github.io/t-ui/)
-******
-#### [Vue2 基础组件码云地址](https://gitee.com/wocwin/t-ui)
-******
-#### [Vue2 基础组件GitHub地址](https://github.com/wocwin/t-ui)
 

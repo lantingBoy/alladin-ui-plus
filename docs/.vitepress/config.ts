@@ -25,7 +25,7 @@ export default defineConfig({
       },
       {
         text: 'Gitee码云地址',
-        link: '',
+        link: 'https://github.com/lantingBoy/alladin-ui-plus',
       },
       {
         text: '博客',

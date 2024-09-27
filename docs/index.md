@@ -14,20 +14,21 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /guide/intro
+      link: /components/
     - theme: alt
       text: 为什么选我们 ?
-      link: /guide/why
+      link: /guide/why/
     - theme: alt
       text: 演示地址：基础版
-      link: https://fantastic-admin.gitee.io/basic-example
+      link: https://lantingboy.github.io/alladin-ui-plus/components/TSelect/base.html
     - theme: alt
       text: 演示地址：专业版
-      link: https://fantastic-admin.gitee.io/pro-example
+      link: https://lantingboy.github.io/alladin-ui-plus/components/TSelect/base.html
 
 features:
 - icon: 💪
   title: 技术栈
+  class: features-out-ani
   details: Vite + Vue3 + Vue-router + Pinia + TypeScript ，采用业内先进的技术栈，使框架始终保持新鲜
 - icon: 🎨
   title: 风格百变

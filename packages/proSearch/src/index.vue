@@ -141,7 +141,7 @@
 </template>
 
 <script setup lang="ts" name="ProSearch">
-import '@/assets/iconfont/iconfont.scss';
+import '../../assets/iconfont/iconfont.scss';
 import { ref } from 'vue';
 import dayjs from 'dayjs';
 import weekOfYear from 'dayjs/plugin/weekOfYear';
