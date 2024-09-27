@@ -1,16 +1,31 @@
-# name: Build and Deploy
-# on: [push]
-# jobs:
-#   build-and-deploy:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - name: Checkout
-#       uses: actions/checkout@master
+name: Build and Deploy
+on:
+  # 仅在推送到默认分支时运行。
+  push:
+    branches: ['master']
+  # 这个选项可以使你手动在 Action tab 页面触发工作流
+  workflow_dispatch:
+  # 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages。
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  # 允许一个并发的部署
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
 
-#     - name: vuepress-deploy
-#       uses: jenkey2011/vuepress-deploy@master
-#       env:
-#         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-#         BUILD_SCRIPT: yarn && yarn docs:build
-#         BUILD_DIR: docs/.vitepress/dist
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: vuepress-deploy
+      uses: jenkey2011/vuepress-deploy@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BUILD_SCRIPT: yarn && yarn docs:build
+        BUILD_DIR: docs/.vitepress/dist
         
