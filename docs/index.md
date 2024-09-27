@@ -16,7 +16,7 @@ hero:
       text: 开始
       link: /components/
     - theme: alt
-      text: 为什么选我们 ?
+      text: 为什么选我们
       link: /guide/why/
     - theme: alt
       text: 演示地址：基础版
