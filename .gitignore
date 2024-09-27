@@ -11,6 +11,8 @@ umd
 docs/.vitepress/.temp
 docs/.vitepress/cache
 docs/.vitepress/cache/deps/
+docs/.vitepress/dist/*
+./docs/.vitepress/dist
 docs/.vitepress/dist
 
 # local env files
